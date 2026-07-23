@@ -7,6 +7,14 @@ on:
       - automation/bors/try
 
 jobs:
+  ec2_runner:
+    name: Test EC2 runner
+    runs-on: ec2-x64-linux
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v7
+      - run: ls .
+      - run: uname -a
   test:
     name: Test before deploy
     runs-on: ubuntu-latest
