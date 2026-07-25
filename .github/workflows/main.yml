@@ -9,7 +9,7 @@ on:
 jobs:
   ec2_runner:
     name: Test EC2 runner
-    runs-on: ec2-x64-linux
+    runs-on: ec2-ubuntu26.04-c8a.12xlarge-x64-linux
     steps:
       - name: Checkout sources
         uses: actions/checkout@v7
