@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v7
       - run: ls .
       - run: uname -a
+      - run: sleep 1800
   test:
     name: Test before deploy
     runs-on: ubuntu-latest
