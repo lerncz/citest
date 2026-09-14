@@ -1,4 +1,5 @@
 timeout = 300
+merge_queue_enabled = true
 
 [ec2_runners]
 runner_group_id = 1
